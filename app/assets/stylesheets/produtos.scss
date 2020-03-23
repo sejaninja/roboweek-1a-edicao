@@ -1,0 +1,40 @@
+// Place all the styles related to the Produtos controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#view_title {
+    font-weight: 600;
+}
+
+.bg-retro {
+    background-color: #141414;
+}
+
+.retro-logo {
+    margin-top: 10px;
+}
+
+.retro-view {
+    margin-top: 20px;
+}
+
+.parallax {
+    // background-image: url(asset-path('bg.png')); // max-height: 250px;
+    // background: linear-gradient(red, yellow);
+    max-height: 140px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background: #eb01a5;
+    background-image: url(asset-path('bg.png')); /* fallback */
+    background-image: url(asset-path('bg.png')), linear-gradient(#141414, #282c34);
+}
+
+label:after {
+    transition-property: all !important;
+    font-size: 0.8rem;
+    transform: none;
+}
+
+label:not(.active):after {
+    transform: translateY(-140%);
+}

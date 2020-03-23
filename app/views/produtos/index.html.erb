@@ -1,0 +1,63 @@
+<div class="container retro-view">
+
+  <% if flash[:notice] %>
+    <div id="notice"  class="alert alert-success" role="alert">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
+  <div class="d-flex justify-content-between">
+    <h2 id="view_title">Lista de jogos</h2>
+
+    <%= link_to "Novo", new_produto_path, class: "btn btn-info btn-lg" %>
+  </div>
+
+  <br/>
+
+  <% if @produtos.size == 0 %>
+    <div id="not_found" class="alert alert-secondary" role="alert">
+      :( Nenhum registro encontrado.
+    </div>
+  <% else %> 
+    <table id="table_list" class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th width="10%">Preço</th>
+          <th>Quantidade</th>
+          <th colspan="3">Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @produtos.each do |produto| %>
+          <tr>
+            <td>
+              <%= produto.id %>
+            </td>
+            <td>
+              <%= produto.nome %>
+            </td>
+            <td>
+              <%= produto.descricao %>
+            </td>
+            <td>
+              <span class="badge badge-success"> <%= number_to_currency(produto.preco, :separator => ".", :delimiter => ".") %></span>
+            </td>
+            <td>
+              <span class="badge badge-info"><%= produto.quantidade %></span>
+            </td>
+            <td>
+              <%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_produto_path(produto), class: "btn btn-outline-secondary btn-sm", id: "edit" %>
+            </td>
+            <td>
+              <%= link_to '<i class="fa fa-trash-o" aria-hidden="true"></i>'.html_safe, produto, class: "btn btn-outline-danger btn-sm", id: "delete", method: :delete, data: { confirm: "Tem certeza que deseja remover?" } %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</div>
