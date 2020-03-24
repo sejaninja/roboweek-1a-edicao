@@ -22,21 +22,17 @@
     <table id="table_list" class="table table-hover">
       <thead>
         <tr>
-          <th>#</th>
           <th>Nome</th>
           <th>Descrição</th>
           <th width="10%">Preço</th>
           <th>Quantidade</th>
-          <th colspan="3">Ações</th>
+          <th colspan="3" :align="right">Ações</th>
         </tr>
       </thead>
 
       <tbody>
         <% @produtos.each do |produto| %>
           <tr>
-            <td>
-              <%= produto.id %>
-            </td>
             <td>
               <%= produto.nome %>
             </td>
@@ -49,10 +45,8 @@
             <td>
               <span class="badge badge-info"><%= produto.quantidade %></span>
             </td>
-            <td>
+            <td :align="right">
               <%= link_to '<i class="fa fa-pencil" aria-hidden="true"></i>'.html_safe, edit_produto_path(produto), class: "btn btn-outline-secondary btn-sm", id: "edit" %>
-            </td>
-            <td>
               <%= link_to '<i class="fa fa-trash-o" aria-hidden="true"></i>'.html_safe, produto, class: "btn btn-outline-danger btn-sm", id: "delete", method: :delete, data: { confirm: "Tem certeza que deseja remover?" } %>
             </td>
           </tr>
