@@ -17,12 +17,17 @@ Cadastro de Jogos
 gem install bundler
 `
 
+## Instale o Rails
+
+`
+gem install rails
+`
+
 ## Dependências do projeto
 
 `
 bundle install
 `
-
 
 ## Workarround SQLite no Windows
 
