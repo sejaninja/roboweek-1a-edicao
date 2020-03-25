@@ -5,9 +5,10 @@ Cadastro de jogos antigos
 ### Passos para executar o projeto
 
 ## Instale o Ruby
-No Windows [https://qaninja.io/instalando-ruby-no-windows/]
-No Linux [https://qaninja.io/instalando-ruby-nodejs-e-zsh-no-linux-ubuntu/]
-No macOS [https://qaninja.io/instalando-ruby-nodejs-e-zsh-no-macos/]
+
+* No Windows [https://qaninja.io/instalando-ruby-no-windows/]
+* No Linux [https://qaninja.io/instalando-ruby-nodejs-e-zsh-no-linux-ubuntu/]
+* No macOS [https://qaninja.io/instalando-ruby-nodejs-e-zsh-no-macos/]
 
 ## Dependências do projeto
 
