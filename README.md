@@ -1,5 +1,6 @@
 # ninja-retro-games
-Cadastro de jogos antigos
+
+Cadastro de Jogos
 
 
 ### Passos para executar o projeto
