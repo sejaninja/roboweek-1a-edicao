@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jquery-rails'
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12'
 gem 'rails', '~> 5.1.4'
 gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 gem 'turbolinks', '~> 5'
