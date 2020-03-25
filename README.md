@@ -11,11 +11,14 @@ Cadastro de Jogos
 * No Linux [https://qaninja.io/instalando-ruby-nodejs-e-zsh-no-linux-ubuntu/]
 * No macOS [https://qaninja.io/instalando-ruby-nodejs-e-zsh-no-macos/]
 
-## Dependências do projeto
+## Gerenciador de pacotes do Ruby
 
 `
 gem install bundler
 `
+
+## Dependências do projeto
+
 `
 bundle install
 `
