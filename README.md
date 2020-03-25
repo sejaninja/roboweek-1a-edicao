@@ -15,8 +15,11 @@ Cadastro de Jogos
 
 `
 gem install bundler
+`
+`
 bundle install
 `
+
 
 ## Workarround SQLite no Windows
 
