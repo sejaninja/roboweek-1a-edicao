@@ -11,7 +11,7 @@ Cadastro de Jogos
 * No Linux [https://qaninja.io/instalando-ruby-nodejs-e-zsh-no-linux-ubuntu/]
 * No macOS [https://qaninja.io/instalando-ruby-nodejs-e-zsh-no-macos/]
 
-## Instale o Node.js LTS (para o Rails)
+## Instale o Node.js LTS
 
 * https://nodejs.org/en/
 
