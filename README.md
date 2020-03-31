@@ -24,7 +24,7 @@ gem install bundler
 ## Instale o Rails
 
 `
-gem install rails
+gem install rails -v 5.1.4
 `
 
 ## Dependências do projeto
